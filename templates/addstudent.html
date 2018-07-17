@@ -1,0 +1,25 @@
+{% include "header.html" %}
+
+
+{% block body %}
+
+
+ {% for row in students %}
+
+<div class="text-center">
+  <img src="{{row.2}}" class="rounded">
+</div>
+
+<div class="text-center">
+  {{row.1}}
+</div>            
+
+<div class="text-center">
+  {{row.3}}
+</div> 
+
+{% endfor  %}
+
+
+{% endblock %}
+
